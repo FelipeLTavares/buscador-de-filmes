@@ -1,24 +1,14 @@
-# projeto-01
+# Buscador de Filmes
+  Projeto pessoal feito para testar conhecimentos em display GRID, responsividade e consumo de APIs.
+  Projeto feito com Vue.js.
+  Dia 1: Definição do projeto e construção da base.
 
-## Project setup
+## Instalar dependencias
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Script para rodar o projeto
 ```
 npm run serve
 ```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
