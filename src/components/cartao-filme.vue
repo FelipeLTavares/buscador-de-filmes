@@ -51,9 +51,14 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 8px;
+  transition: 0.5s opacity;
+}
+.container-filme:hover{
+  opacity: 0.7;
 }
 img{
   max-height: 150px;
+  max-width: 130px;
   border-radius: 5px;
   margin-left: 0;
 }

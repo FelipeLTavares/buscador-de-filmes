@@ -28,7 +28,7 @@ export default {
         return {
             listaFilmes: [],
             busca: "",
-            mensagem: 'Inicie uma pesquisa!',
+            mensagem: 'Procure por filmes e séries aqui!',
             vazio: false
         };
     },
@@ -46,7 +46,7 @@ export default {
                         }
                         listaProvisoria2.length == 0? this.vazio = false: this.vazio = true;
                         this.listaFilmes = listaProvisoria2;
-                        this.mensagem = 'Sem resultado para esta pesquisa... :(';
+                        this.mensagem = 'Sem resultado para esta pesquisa... 😢';
                 });
         },
 
