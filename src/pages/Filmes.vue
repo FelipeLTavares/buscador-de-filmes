@@ -68,25 +68,28 @@ export default {
     header{
         background-color: #1C1C1C	;
         grid-area: h;
-        display: grid;
-        grid-template-columns: 1fr 2fr 1fr;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
     }
     header > h1{
         font-size: 30px;
         color: white;
+        margin-left: 20px;
     }
     .buscador{
         height: 28px;
         margin: 20px;
     }
     .buscador > input{
+        font-family: 'Rajdhani', sans-serif;
         height: 24px;
         min-width: 200px;
         border-radius: 5px 0 0 5px;
         padding-left: 8px;
     }
     .buscador > button{
+        font-family: 'Rajdhani', sans-serif;
         height: 32px;
         font-weight: 600;
         border-radius: 0 5px 5px 0;
@@ -118,44 +121,44 @@ export default {
 
     @media (max-width: 1008px){
         .container-principal{
-            grid-template: 20vh 15vh auto 20vh/1fr 4fr;
-            grid-template-areas: 'h h' 'm m' 'm m' 'f f';
+            grid-template: 15vh auto 20vh/1fr 4fr;
+            grid-template-areas: 'h h' 'm m' 'f f';
         }
         main{
+            min-height: 65vh;
             grid-template-columns: auto auto;
-        }
-        header{
-            grid-template-columns: auto auto;
-            gap: 100px;
         }
     }
     
     @media (max-width: 770px){
-        header{
-            grid-template-columns: auto;
-            gap: 0px;
-            align-items: center;
+        .container-principal{
+            grid-template: 20vh auto 20vh/1fr 4fr;
+            grid-template-areas: 'h h' 'm m' 'f f';
         }
         main{
             min-height: 60vh;
-            grid-template-columns: auto auto;
         }
         header > h1{
-        font-size: 24px;
-        color: white;
-    }
+            font-size: 24px;
+            color: white;
+        }
     }
 
     @media(max-width: 610px){
         main{
             grid-template-columns: auto;
         }
-        header > h1{
-            margin: 5px;
-            margin-top: 5px;
+        header{
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 0;
         }
-        .buscador{
-            margin: 5px;
+        header > h1{
+            margin: 0;
+        }
+        header > .buscador{
+            margin: 0;
         }
     }
 </style>
