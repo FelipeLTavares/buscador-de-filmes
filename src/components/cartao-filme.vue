@@ -1,6 +1,6 @@
 <template>
   <div class="container-filme">
-    <a :href="filmeUrl"><img :src="filmeImagem" :alt="filmeNome"/></a>
+    <a :href="filmeUrl" target="_blank"><img :src="filmeImagem" :alt="filmeNome"/></a>
     
     <div class="containerInfo">
       <h3>{{filmeNome}}</h3>
